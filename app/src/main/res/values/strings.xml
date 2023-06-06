@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Rick&amp;Morty</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="nameText">Name: </string>
+
+    <string name="status"><b>Name: </b></string>
+    <string name="location"><b>Location: </b></string>
+    <string name="species"><b>Species: </b></string>
+    <string name="back">&lt;</string>
+    <string name="episodes">Episodes</string>
+    <string name="sort_by_date">Sort by date</string>
+    <string name="sort_by_alph">Sort by alph</string>
+    <string name="error">Error</string>
+    <string name="again">Again</string>
+    <string name="bundle_key_1">id</string>
+    <string name="bundle_key_2">ids</string>
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/listOfCharacter">
+
+    <fragment
+        android:id="@+id/listOfCharacter"
+        android:name="com.example.ramapikotlin_ver_20.presentation.ListOfCharacter.ListOfCharacter"
+        android:label="fragment_list_of_character"
+        tools:layout="@layout/fragment_list_of_character" >
+        <action
+            android:id="@+id/action_listOfCharacter_to_aboutCharacter"
+            app:destination="@id/aboutCharacter" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutCharacter"
+        android:name="com.example.ramapikotlin_ver_20.presentation.AboutCharacter.AboutCharacter"
+        android:label="fragment_about_character"
+        tools:layout="@layout/fragment_about_character" >
+        <action
+            android:id="@+id/action_aboutCharacter_to_listOfEpisodes"
+            app:destination="@id/listOfEpisodes" />
+        <action
+            android:id="@+id/action_aboutCharacter_to_listOfCharacter"
+            app:destination="@id/listOfCharacter" />
+    </fragment>
+    <fragment
+        android:id="@+id/listOfEpisodes"
+        android:name="com.example.ramapikotlin_ver_20.presentation.ListOfEpisodes.ListOfEpisodes"
+        android:label="fragment_list_of_episodes"
+        tools:layout="@layout/fragment_list_of_episodes" >
+        <action
+            android:id="@+id/action_listOfEpisodes_to_aboutCharacter"
+            app:destination="@id/aboutCharacter" />
+    </fragment>
+</navigation>
